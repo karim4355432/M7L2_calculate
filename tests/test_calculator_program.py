@@ -6,6 +6,12 @@ def test_calculate_addition():
 
 def test_calculate_division():
     assert calculate(8, 2, '/') == 4
+     
+def test_calculate_addition():
+    assert calculate(4, 3, '-') == 1
+
+def test_calculate_division():
+    assert calculate(2, 2, '*') == 4
 
 def test_calculate_unknown_operation():
     assert calculate(5, 5, 'unknown') == "Неизвестная операция."
